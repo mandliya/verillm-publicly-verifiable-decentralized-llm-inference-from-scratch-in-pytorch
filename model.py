@@ -60,7 +60,7 @@ import numpy as np
 def linear_projection(x, weight, bias=None):
     """Affine map y = x @ weight + bias used throughout the transformer."""
     # TODO: compute x @ weight and add bias if provided
-    bias = bias if bias is not None else 0
+    bias = 0 if bias is None else bias
     return x @ weight + bias
 
 # Step 7 - compute_attention_scores
