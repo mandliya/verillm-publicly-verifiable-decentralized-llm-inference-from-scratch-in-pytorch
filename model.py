@@ -27,7 +27,7 @@ def encode_string(text, vocab):
 # Step 3 - decode_ids
 def decode_ids(ids, vocab):
     # TODO: decode a sequence of token ids back into the original string using vocab['itos'].
-    return ''.join([vocab['itos'][i] for i in ids])
+    return ''.join(vocab['itos'][i] for i in ids)
 
 # Step 4 - embed_tokens
 import torch
